@@ -1,0 +1,26 @@
+{
+  "name": "basic-fantasy-rpg-api",
+  "version": "1.0.0",
+  "description": "Basic Fantasy RPG API built with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mdiviesti/Basic-Fantasy-RPG-API.git"
+  },
+  "keywords": [
+    "node",
+    "Basic",
+    "Fantasy",
+    "RPG",
+    "BasicFantasyRPG",
+    "API"
+  ],
+  "author": "Michael Diviesti",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^4.0.8"
+  }
+}
