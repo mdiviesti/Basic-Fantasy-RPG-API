@@ -63,3 +63,7 @@ typings/
 package-lock.json
 .idea
 .idea/
+.scratches
+.scratches/
+src
+src/

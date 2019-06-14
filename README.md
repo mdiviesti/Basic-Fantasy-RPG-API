@@ -8,17 +8,47 @@ http://opengamingfoundation.org/ogl.html
 
 Basic Fantasy Role-Playing Game rule system can be found at https://www.basicfantasy.org/ 
 
-This software is released under the MIT license. 
+This software is released under the MIT license, however use of the data provided requires that you also distribute 
+or link to the OGL in any public or commercial use including public software versioning and distribution hubs. 
+
+# current state
+Currently, I've added data and endpoints for Player Character (PC) races. These were direct copies from both the 3rd 
+edition manual and the supplements which have been provided for use on the website. 
+Current endpoints are read only.
+
+# future state
+Races are currently just the text as it appears in the books. For items like Special Abilities, Saving Throws, and 
+Restrictions this data isn't exactly usable for anything computational (like programatically restricting a specific 
+race if you've rolled too low on a strength stat for example). This data will be reformatted in a way that will make 
+those computations available. 
+I also plan to add classes, items, the beastiary, spells, transportation methods, and other pieces of data that will 
+be useful to you.
 
 # Requirements
 NodeJS
 
 # Dependencies 
+express
 sqlite3 
+
 For now, I've settled on using sqlite3 simply due to its portability.
 
 # Installation
 ```npm install```
+
+# running the server
+```node server.js```
+
+# endpoints
+```
+{
+    "/all/names": "Get all the race names from the dataset",
+    "/all/races": "Gell all records for all races in the database",
+    "/core/names": "Get only core race names from the dataset",
+    "/core/races": "Gell records for all the core races in the database",
+    "/races/name/:name": "Replace :name with a race name to get that race's specific records"
+}
+```
 
 # Contribute
 Feel free to fork the repo and make pull requests.
