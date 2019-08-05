@@ -1,4 +1,9 @@
-# Basic-Fantasy-RPG-API
+## Table of contents
+* [Introduction](#basic-fantasy-rpg-api)
+* [Current State](#currenct-state)
+
+
+## Basic Fantasy RPG API
 Basic Fantasy RPG API built with NodeJS
 
 This is a work in progress API for the Basic Fantasy Role-Playing Game rule system. 
@@ -11,7 +16,7 @@ Basic Fantasy Role-Playing Game rule system can be found at https://www.basicfan
 This software is released under the MIT license, however use of the data provided requires that you also distribute 
 or link to the OGL in any public or commercial use including public software versioning and distribution hubs. 
 
-# current state
+## current state
 Currently, I've added data and endpoints for Player Character (PC) races. These were direct copies from both the 3rd 
 edition manual and the supplements which have been provided for use on the website. 
 Current endpoints are read only.
@@ -43,9 +48,9 @@ For now, I've settled on using sqlite3 simply due to its portability.
 ```
 {
     "/all/names": "Get all the race names from the dataset",
-    "/all/races": "Gell all records for all races in the database",
+    "/all/races": "Get all records for all races in the database",
     "/core/names": "Get only core race names from the dataset",
-    "/core/races": "Gell records for all the core races in the database",
+    "/core/races": "Get records for all the core races in the database",
     "/races/name/:name": "Replace :name with a race name to get that race's specific records"
 }
 ```
