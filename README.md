@@ -34,9 +34,6 @@ NodeJS
 
 # Dependencies 
 express
-sqlite3 
-
-For now, I've settled on using sqlite3 simply due to its portability.
 
 # Installation
 ```npm install```

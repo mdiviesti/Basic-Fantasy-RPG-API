@@ -1,6 +1,5 @@
-let sqlite3 = require('sqlite3').verbose();
-let db = new sqlite3.Database('bfrpgData.sqlite3');
-
+let racesData = require('./jsondata/RacesData.js');
+var RacesData = new racesData();
 var express = require('express');
 var restapi = express();
 
@@ -16,36 +15,26 @@ restapi.get('/', function (request, response) {
 });
 
 restapi.get('/all/names', function (request, response) {
-    db.all("SELECT name FROM races", function (err, row) {
-        response.json(row);
-    });
+    response.json(RacesData.getAllRaceNames());
 });
 
 restapi.get('/all/races', function (request, response) {
-    db.all("SELECT * FROM races", function (err, row) {
-        response.json(row);
-    });
+    response.json(RacesData.getData());
 });
 
 restapi.get('/core/names', function (request, response) {
-    db.all("SELECT name FROM races WHERE core = 1", function (err, row) {
-        response.json(row);
-    });
+    response.json(RacesData.getCoreRaceNames());
 });
 
 restapi.get('/core/races', function (request, response) {
-    db.all("SELECT * FROM races WHERE core = 1", function (err, row) {
-        response.json(row);
-    });
+    response.json(RacesData.getCoreRaces());
 });
 
 restapi.get('/races/name/:name', function (request, response) {
     let name = request.params.name;
-    db.all("SELECT * FROM races WHERE lower(name) = (?)", name.toLowerCase(), function (err, row) {
-        response.json(row);
-    });
+    response.json(RacesData.getRaceByName(name));
 });
 
 restapi.listen(3000);
 
-console.log("Submit GET or POST to http://localhost:3000/endpoints");
+console.log("Submit GET or POST to http://localhost:3000/");
