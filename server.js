@@ -1,4 +1,4 @@
-let racesData = require('./jsondata/RacesData.js');
+let racesData = require('./modules/RacesData.js');
 var RacesData = new racesData();
 var express = require('express');
 var restapi = express();
