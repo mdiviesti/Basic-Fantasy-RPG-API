@@ -144,6 +144,274 @@ class ClassesData {
             }, {
                 "Level": 20, "XP": 1950000, "HitDice": "9d4+11", "Spells": {1: 6, 2: 5, 3: 5, 4: 4, 5: 4, 6: 3}
             }]
+        }, {
+            "Core": 1,
+            "Name": "Thief",
+            "Description": "Thieves are those who take what they want or need by stealth, disarming traps and picking locks to get to the gold they crave; or “borrowing” money from pockets, beltpouches, etc. right under the nose of the “mark” without the victim ever knowing. Thieves fight better than Magic-Users but not as well as Fighters. Avoidance of honest work leads Thieves to be less hardy than the other classes, though they do pull ahead of the Magic-Users at higher levels. The Prime Requisite for Thieves is Dexterity; a character must have a Dexterity score of 9 or higher to become a Thief. They may use any weapon, but may not wear metal armor as it interferes with stealthy activities, nor may they use shields of any sort. Leather armor is acceptable, however. Thieves have a number of special abilities, described below. One Turn must generally be spent to use any of these abilities, though the GM may amend this as he or she sees fit. The GM may choose to make any of these rolls on behalf of the player, at his or her option, to help maintain the proper state of uncertainty. Also note that the GM may apply situational adjustments (plus or minus percentage points) as he or she sees fit; for instance, it's obviously harder to climb a wall slick with slime than one that is dry, so the GM might apply a penalty of 20% for the slimy wall.",
+            "PrimeRequisite": {"Dexterity": 9},
+            "Armor": "Light",
+            "Weapons": "Any",
+            "Advancement": [{
+                "Level": 1,
+                "XP": 0,
+                "HitDice": "1d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 25,
+                    "RemoveTraps": 20,
+                    "PickPockets": 30,
+                    "MoveSilently": 25,
+                    "ClimbWalls": 80,
+                    "Hide": 10,
+                    "Listen": 30
+                }
+            }, {
+                "Level": 2,
+                "XP": 1250,
+                "HitDice": "2d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 30,
+                    "RemoveTraps": 25,
+                    "PickPockets": 35,
+                    "MoveSilently": 30,
+                    "ClimbWalls": 81,
+                    "Hide": 15,
+                    "Listen": 34
+                }
+            }, {
+                "Level": 3,
+                "XP": 2500,
+                "HitDice": "3d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 35,
+                    "RemoveTraps": 30,
+                    "PickPockets": 40,
+                    "MoveSilently": 35,
+                    "ClimbWalls": 82,
+                    "Hide": 20,
+                    "Listen": 38
+                }
+            }, {
+                "Level": 4,
+                "XP": 5000,
+                "HitDice": "4d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 40,
+                    "RemoveTraps": 35,
+                    "PickPockets": 45,
+                    "MoveSilently": 40,
+                    "ClimbWalls": 83,
+                    "Hide": 25,
+                    "Listen": 42
+                }
+            }, {
+                "Level": 5,
+                "XP": 10000,
+                "HitDice": "5d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 45,
+                    "RemoveTraps": 40,
+                    "PickPockets": 50,
+                    "MoveSilently": 45,
+                    "ClimbWalls": 84,
+                    "Hide": 30,
+                    "Listen": 46
+                }
+            }, {
+                "Level": 6,
+                "XP": 20000,
+                "HitDice": "6d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 50,
+                    "RemoveTraps": 45,
+                    "PickPockets": 55,
+                    "MoveSilently": 50,
+                    "ClimbWalls": 85,
+                    "Hide": 35,
+                    "Listen": 50
+                }
+            }, {
+                "Level": 7,
+                "XP": 40000,
+                "HitDice": "7d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 55,
+                    "RemoveTraps": 50,
+                    "PickPockets": 60,
+                    "MoveSilently": 55,
+                    "ClimbWalls": 86,
+                    "Hide": 40,
+                    "Listen": 54
+                }
+            }, {
+                "Level": 8,
+                "XP": 75000,
+                "HitDice": "8d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 60,
+                    "RemoveTraps": 55,
+                    "PickPockets": 65,
+                    "MoveSilently": 60,
+                    "ClimbWalls": 87,
+                    "Hide": 45,
+                    "Listen": 58
+                }
+            }, {
+                "Level": 9,
+                "XP": 150000,
+                "HitDice": "9d4",
+                "ThiefAbilities": {
+                    "OpenLocks": 65,
+                    "RemoveTraps": 60,
+                    "PickPockets": 70,
+                    "MoveSilently": 65,
+                    "ClimbWalls": 88,
+                    "Hide": 50,
+                    "Listen": 62
+                }
+            }, {
+                "Level": 10,
+                "XP": 225000,
+                "HitDice": "9d4+2",
+                "ThiefAbilities": {
+                    "OpenLocks": 68,
+                    "RemoveTraps": 63,
+                    "PickPockets": 74,
+                    "MoveSilently": 68,
+                    "ClimbWalls": 89,
+                    "Hide": 53,
+                    "Listen": 65
+                }
+            }, {
+                "Level": 11,
+                "XP": 300000,
+                "HitDice": "9d4+4",
+                "ThiefAbilities": {
+                    "OpenLocks": 71,
+                    "RemoveTraps": 66,
+                    "PickPockets": 78,
+                    "MoveSilently": 71,
+                    "ClimbWalls": 90,
+                    "Hide": 56,
+                    "Listen": 68
+                }
+            }, {
+                "Level": 12,
+                "XP": 375000,
+                "HitDice": "9d4+6",
+                "ThiefAbilities": {
+                    "OpenLocks": 74,
+                    "RemoveTraps": 69,
+                    "PickPockets": 82,
+                    "MoveSilently": 74,
+                    "ClimbWalls": 91,
+                    "Hide": 59,
+                    "Listen": 71
+                }
+            }, {
+                "Level": 13,
+                "XP": 450000,
+                "HitDice": "9d4+8",
+                "ThiefAbilities": {
+                    "OpenLocks": 77,
+                    "RemoveTraps": 72,
+                    "PickPockets": 86,
+                    "MoveSilently": 77,
+                    "ClimbWalls": 92,
+                    "Hide": 62,
+                    "Listen": 74
+                }
+            }, {
+                "Level": 14,
+                "XP": 525000,
+                "HitDice": "9d4+10",
+                "ThiefAbilities": {
+                    "OpenLocks": 80,
+                    "RemoveTraps": 75,
+                    "PickPockets": 90,
+                    "MoveSilently": 80,
+                    "ClimbWalls": 93,
+                    "Hide": 65,
+                    "Listen": 77
+                }
+            }, {
+                "Level": 15,
+                "XP": 600000,
+                "HitDice": "9d4+12",
+                "ThiefAbilities": {
+                    "OpenLocks": 83,
+                    "RemoveTraps": 78,
+                    "PickPockets": 94,
+                    "MoveSilently": 83,
+                    "ClimbWalls": 94,
+                    "Hide": 68,
+                    "Listen": 80
+                }
+            }, {
+                "Level": 16,
+                "XP": 675000,
+                "HitDice": "9d4+14",
+                "ThiefAbilities": {
+                    "OpenLocks": 84,
+                    "RemoveTraps": 79,
+                    "PickPockets": 95,
+                    "MoveSilently": 85,
+                    "ClimbWalls": 95,
+                    "Hide": 69,
+                    "Listen": 83
+                }
+            }, {
+                "Level": 17,
+                "XP": 750000,
+                "HitDice": "9d4+16",
+                "ThiefAbilities": {
+                    "OpenLocks": 85,
+                    "RemoveTraps": 80,
+                    "PickPockets": 96,
+                    "MoveSilently": 87,
+                    "ClimbWalls": 96,
+                    "Hide": 70,
+                    "Listen": 86
+                }
+            }, {
+                "Level": 18,
+                "XP": 825000,
+                "HitDice": "9d4+18",
+                "ThiefAbilities": {
+                    "OpenLocks": 86,
+                    "RemoveTraps": 81,
+                    "PickPockets": 97,
+                    "MoveSilently": 89,
+                    "ClimbWalls": 97,
+                    "Hide": 71,
+                    "Listen": 89
+                }
+            }, {
+                "Level": 19,
+                "XP": 900000,
+                "HitDice": "9d4+20",
+                "ThiefAbilities": {
+                    "OpenLocks": 87,
+                    "RemoveTraps": 82,
+                    "PickPockets": 98,
+                    "MoveSilently": 91,
+                    "ClimbWalls": 98,
+                    "Hide": 72,
+                    "Listen": 92
+                }
+            }, {
+                "Level": 20,
+                "XP": 975000,
+                "HitDice": "9d4+22",
+                "ThiefAbilities": {
+                    "OpenLocks": 88,
+                    "RemoveTraps": 83,
+                    "PickPockets": 99,
+                    "MoveSilently": 93,
+                    "ClimbWalls": 99,
+                    "Hide": 73,
+                    "Listen": 95
+                }
+            }]
         }];
     }
 
