@@ -43,13 +43,20 @@ express
 
 # endpoints
 ```
-{
-    "/all/names": "Get all the race names from the dataset",
-    "/all/races": "Get all records for all races in the database",
-    "/core/names": "Get only core race names from the dataset",
-    "/core/races": "Get records for all the core races in the database",
+races
+    "/races": "Get all records for all races.",
+    "/races/core": "Get records for core races only",
+    "/races/names": "Get all the race names from the dataset",
+    "/races/names/core": "Get only core race names from the dataset",
     "/races/name/:name": "Replace :name with a race name to get that race's specific records"
-}
+
+classes
+    "/classes": "Get all records for all classes.",
+    "/classes/core": "Get records for core classes only",
+    "/classes/names": "Get all the class names from the dataset",
+    "/classes/names/core": "Get only core class names from the dataset",
+    "/classes/name/:name": "Replace :name with a class name to get that specific class record"
+      
 ```
 
 # Contribute
