@@ -1,6 +1,6 @@
 class RacesData {
-    getData() {
-        var data = [{
+    getRaces() {
+        return [{
             "Core": 1,
             "Name": "Dwarf",
             "Description": "Dwarves are a short, stocky race; both male and female Dwarves stand around four feet tall and typically weigh around 120 pounds. Their long hair and thick beards are dark brown, gray or black. They take great pride in their beards, sometimes braiding or forking them. They have a fair to ruddy complexion. Dwarves have stout frames and a strong, muscular build. They are rugged and resilient, with the capacity to endure great hardships. Dwarves are typically practical, stubborn and courageous. They can also be introspective, suspicious and possessive. They have a lifespan of three to four centuries.",
@@ -217,29 +217,28 @@ class RacesData {
             "SavingThrows": "Like Elves, Phaerim save at +1 vs. Paralysis or Petrify and +2 vs. Magic Wands and Spells.",
             "InitialLevels": ""
         }];
-        return data;
     }
 
-    getCoreRaces(){
-        return this.getData().filter(function(obj) {
+    getRacesCore(){
+        return this.getRaces().filter(function(obj) {
             return obj.Core === 1;
         });
     }
 
-    getAllRaceNames(){
-        return this.getData().map(function(obj) {
+    getRacesNames(){
+        return this.getRaces().map(function(obj) {
             return obj.Name;
         });
     }
 
-    getCoreRaceNames(){
-        return this.getCoreRaces().map((obj) => {
+    getRacesNamesCore(){
+        return this.getRaces().map((obj) => {
             return obj.Name;
         });
     }
 
     getRaceByName(raceName){
-        return this.getData().filter(function (obj) {
+        return this.getRaces().filter(function (obj) {
             return obj.Name.toLowerCase() === raceName.toLowerCase();
         })[0];
     }
