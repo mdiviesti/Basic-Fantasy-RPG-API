@@ -17,8 +17,14 @@ This software is released under the MIT license, however use of the data provide
 or link to the OGL in any public or commercial use including public software versioning and distribution hubs. 
 
 ## current state
+All Core components are from the Basic Fantasy RPG Rules r107 — 3rd Edition Core Rules
+
 Currently, I've added data and endpoints for Player Character (PC) races. These were direct copies from both the 3rd 
-edition manual and the supplements which have been provided for use on the website. 
+edition manual mentioned above and the supplements which have been provided for use on the website. 
+
+The Core classes have also been added from the r107 Rules. Future updates will include the additional classes
+ provided in supplements. 
+
 Current endpoints are read only.
 
 # future state
