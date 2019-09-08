@@ -1,9 +1,13 @@
 let racesData = require('./modules/RacesData');
 let classesDate = require('./modules/ClassesData');
+var cors = require('cors');
+
 var RacesData = new racesData();
 var ClassesData = new classesDate();
 var express = require('express');
 var restapi = express();
+
+restapi.use(cors());
 
 restapi.get('/', function (request, response) {
     let endpoints = [{
@@ -75,6 +79,8 @@ restapi.get('/classes/name/:name', function (request, response) {
     response.json(ClassesData.getClassByName(name));
 });
 
-restapi.listen(3000);
+restapi.listen(3000, function () {
+    console.log('CORS-enabled web server listening on port 3000')
+});
 
 console.log("Submit GET or POST to http://localhost:3000/");
