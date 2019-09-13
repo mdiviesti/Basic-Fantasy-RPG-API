@@ -1,3 +1,4 @@
+[![Basic Fantasy RPG v3 r107](https://img.shields.io/badge/Basic%20Fantasy%20RPG-3.107-green.svg)](https://www.basicfantasy.org/)
 [![License Github](https://img.shields.io/github/license/mdiviesti/Basic-Fantasy-RPG-API.svg)](https://img.shields.io/github/license/mdiviesti/Basic-Fantasy-RPG-API.svg)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://img.shields.io/badge/version-1.0.0-green.svg)
 [![Node Version](https://img.shields.io/badge/node-10.15.3-lightgrey.svg)](https://img.shields.io/badge/node-10.15.3-lightgrey.svg)
