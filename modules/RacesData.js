@@ -8,7 +8,8 @@ class RacesData {
             "SpecialAbilities": "All Dwarves have Darkvision with a 60' range, and are able to detect slanting passages, traps, shifting walls and new construction on a roll of 1-2 on 1d6; a search must be performed before this roll may be made.",
             "ThiefAbilityAdjustments": "",
             "SavingThrows": "Dwarves save at +4 vs. Death Ray or Poison, Magic Wands, Paralysis or Petrify, and Spells, and at +3 vs. Dragon Breath.",
-            "InitialLevels": ""
+            "InitialLevels": "",
+            "RestrictionStats": [{stat: 'strength', min:  '9'}, {stat: 'charisma', max:  '17'}]
         }, {
             "Core": 1,
             "Name": "Elf",
@@ -17,7 +18,8 @@ class RacesData {
             "SpecialAbilities": "All Elves have Darkvision with a 60' range. They are able to find secret doors more often than normal (1-2 on 1d6 rather than the usual 1 on 1d6). An Elf is so observant that one has a 1 on 1d6 chance to find a secret door with a cursory look. Elves are immune to the paralyzing attack of ghouls. Also, they are less likely to be surprised in combat, reducing the chance of surprise by 1 in 1d6.",
             "ThiefAbilityAdjustments": "",
             "SavingThrows": "Elves save at +1 vs. Paralysis or Petrify, and +2 vs. Magic Wands and Spells.",
-            "InitialLevels": ""
+            "InitialLevels": "",
+            "RestrictionStats": [{stat: 'intelligence', min:  '9'}, {stat: 'constitution', max:  '17'}]
         }, {
             "Core": 1,
             "Name": "Halfling",
@@ -26,7 +28,8 @@ class RacesData {
             "SpecialAbilities": "Halflings are unusually accurate with all sorts of ranged weapons, gaining a +1 attack bonus when employing them. When attacked in melee by creatures larger than man-sized, Halflings gain a +2 bonus to their Armor Class. Halflings are quick-witted, thus adding +1 to Initiative die rolls. Outdoors in their preferred forest terrain, they are able to hide very effectively; so long as they remain still there is only a 10% chance they will be detected. Even indoors, in dungeons or in non-preferred terrain they are able to hide such that there is only a 30% chance of detection. Note that a Halfling Thief will roll only once, using either the Thief ability or the Halfling ability, whichever is better.",
             "ThiefAbilityAdjustments": "",
             "SavingThrows": "Halflings save at +4 vs. Death Ray or Poison, Magic Wands, Paralysis or Petrify, and Spells, and at +3 vs. Dragon Breath.",
-            "InitialLevels": ""
+            "InitialLevels": "",
+            "RestrictionStats": [{stat: 'dexterity', min:  '9'}, {stat: 'strength', max:  '17'}]
         }, {
             "Core": 1,
             "Name": "Human",
@@ -35,7 +38,8 @@ class RacesData {
             "SpecialAbilities": "Humans learn unusually quickly, gaining a bonus of 10% to all experience points earned.",
             "ThiefAbilityAdjustments": "",
             "SavingThrows": "Humans are the “standard,” and thus have no saving throw bonuses.",
-            "InitialLevels": ""
+            "InitialLevels": "",
+            "RestrictionStats": []
         }, {
             "Core": 0,
             "Name": "Gnome",

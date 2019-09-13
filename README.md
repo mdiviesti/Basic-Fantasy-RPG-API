@@ -1,6 +1,19 @@
+[![License Github](https://img.shields.io/github/license/mdiviesti/Basic-Fantasy-RPG-API.svg)](https://img.shields.io/github/license/mdiviesti/Basic-Fantasy-RPG-API.svg)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://img.shields.io/badge/version-1.0.0-green.svg)
+[![Node Version](https://img.shields.io/badge/node-10.15.3-lightgrey.svg)](https://img.shields.io/badge/node-10.15.3-lightgrey.svg)
+[![Express Version](https://img.shields.io/badge/express-4.17.1-lightgrey.svg)](https://img.shields.io/badge/express-4.17.1-lightgrey.svg)
+
 ## Table of contents
 * [Introduction](#basic-fantasy-rpg-api)
 * [Current State](#currenct-state)
+* [Future State](#future-state)
+* [Requirements](#requirements)
+* [Dependencies](#dependencies)
+* [Installation](#installation)
+* [Running the Server](#running-the-server)
+* [Endpoints](#endpoints)
+* [Contribute](#contribute)
+* [Reporting Bugs/Request Features](#reporting-bugs)
 
 
 ## Basic Fantasy RPG API
@@ -19,27 +32,29 @@ or link to the OGL in any public or commercial use including public software ver
 ## current state
 All Core components are from the Basic Fantasy RPG Rules r107 — 3rd Edition Core Rules
 
-Currently, I've added data and endpoints for Player Character (PC) races. These were direct copies from both the 3rd 
-edition manual mentioned above and the supplements which have been provided for use on the website. 
+Races: All race data for Player Character (PC) from all existing material on the download page has been added and exposed
+via the endpoints.
 
-The Core classes have also been added from the r107 Rules. Future updates will include the additional classes
- provided in supplements. 
+Classes: Basic Class data for PCs from the core rule book has been added. 
 
-Current endpoints are read only.
+Saving Throws: have not yet been added
+
+Spells: have not yet been added.
 
 # future state
-Races are currently just the text as it appears in the books. For items like Special Abilities, Saving Throws, and 
-Restrictions this data isn't exactly usable for anything computational (like programatically restricting a specific 
-race if you've rolled too low on a strength stat for example). This data will be reformatted in a way that will make 
-those computations available. 
-I also plan to add classes, items, the beastiary, spells, transportation methods, and other pieces of data that will 
-be useful to you.
+The future of this project is to have a complete API with all character related core elements plus character related 
+supplemental elements. The hope is that anyone could use it to build both core and non-core characters easily without having to thumb through all of the books to find everything.
+This is not an attempt to replace the books, but simply an attempt to augment the great work that Chris Gonnerman and others have done to bring this amazing RPG to us. 
+You still need the books in order to play, as the game mechanics themselves are not going to be included in this API.
+
+While there are plans to add items, monsters, vehicles, and other objects to this API, the main focus at the moment is to get character build and spell related data completed.
 
 # Requirements
 NodeJS
 
 # Dependencies 
 express
+cores
 
 # Installation
 ```npm install```
@@ -68,5 +83,6 @@ classes
 # Contribute
 Feel free to fork the repo and make pull requests.
 
-# Bug Reporting, feature requests... etc
-Feel free to use the issues feature https://github.com/mdiviesti/Basic-Fantasy-RPG-API/issues
+# Reporting bugs
+You can report bugs or request features using the github issue tracker. 
+https://github.com/mdiviesti/Basic-Fantasy-RPG-API/issues
