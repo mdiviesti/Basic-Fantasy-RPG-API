@@ -40,7 +40,7 @@ Classes: Basic Class data for PCs from the core rule book has been added.
 
 Saving Throws: have not yet been added
 
-Spells: have not yet been added.
+Spells: Core spells have been added. I borrowed the JSON from https://github.com/humburg/bfrpg_spell_cards
 
 # future state
 The future of this project is to have a complete API with all character related core elements plus character related 
@@ -78,6 +78,14 @@ classes
     "/classes/names": "Get all the class names from the dataset",
     "/classes/names/core": "Get only core class names from the dataset",
     "/classes/name/:name": "Replace :name with a class name to get that specific class record"
+
+spells
+    "/spells": "Get all spells.",
+    "/spells/core": "Get core spells",
+    "/spells/class/:name": "Get spells by class name",
+    "/spells/level/:level": "Get spells by level",
+    "/spells/name/:name": "Get spells by name",
+    "/spells/class/:name/level/:level": "Get spells by class and level"
       
 ```
 
