@@ -1201,30 +1201,55 @@ class SpellsData {
     getSpellsCore() {
         return this.getSpells().filter(function (obj) {
             return obj.book === "BF";
+        }).sort( function( a, b ) {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
         });
     }
 
     getSpellsByClass(className) {
         return this.getSpells().filter(function (obj) {
             return obj.class.toLowerCase() === className.toLowerCase();
+        }).sort( function( a, b ) {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
         });
     }
 
     getSpellsByLevel(level) {
         return this.getSpells().filter(function (obj) {
             return obj.level === level;
+        }).sort( function( a, b ) {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
         });
     }
 
     getSpellsByName(name) {
         return this.getSpells().filter(function (obj) {
             return obj.name.toLowerCase() === name.toLowerCase();
+        }).sort( function( a, b ) {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
         });
     }
 
     getSpellsByClassAndLevel(className, level) {
         return this.getSpells().filter(function (obj) {
             return obj.class.toLowerCase() === className.toLowerCase() && obj.level === level;
+        }).sort( function( a, b ) {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
         });
     }
 }
