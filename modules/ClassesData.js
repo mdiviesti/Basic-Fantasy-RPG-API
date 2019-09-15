@@ -412,7 +412,12 @@ class ClassesData {
                     "Listen": 95
                 }
             }]
-        }];
+        }].sort( function( a, b ) {
+            a = a.Name.toLowerCase();
+            b = b.Name.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
+        });
     }
 
     getClassesCore() {
