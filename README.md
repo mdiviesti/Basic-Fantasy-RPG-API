@@ -1,8 +1,8 @@
 [![Basic Fantasy RPG v3 r107](https://img.shields.io/badge/Basic%20Fantasy%20RPG-3.107-green.svg)](https://www.basicfantasy.org/)
 [![License Github](https://img.shields.io/github/license/mdiviesti/Basic-Fantasy-RPG-API.svg)](https://img.shields.io/github/license/mdiviesti/Basic-Fantasy-RPG-API.svg)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://img.shields.io/badge/version-1.0.0-green.svg)
-[![Node Version](https://img.shields.io/badge/node-10.15.3-lightgrey.svg)](https://img.shields.io/badge/node-10.15.3-lightgrey.svg)
-[![Express Version](https://img.shields.io/badge/express-4.17.1-lightgrey.svg)](https://img.shields.io/badge/express-4.17.1-lightgrey.svg)
+[![Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://img.shields.io/badge/version-1.0.1-green.svg)
+[![Node Version](https://img.shields.io/badge/NodeJS-20.6.0-lightgrey.svg)](https://img.shields.io/badge/NodeJS-20.6.0-lightgrey.svg)
+[![Express Version](https://img.shields.io/badge/express-4.18.2-lightgrey.svg)](https://img.shields.io/badge/express-4.18.2-lightgrey.svg)
 
 ## Table of contents
 * [Introduction](#basic-fantasy-rpg-api)
@@ -50,6 +50,13 @@ You still need the books in order to play, as the game mechanics themselves are 
 
 While there are plans to add items, monsters, vehicles, and other objects to this API, the main focus at the moment is to get character build and spell related data completed.
 
+ - [ ] update to the 4th edition core rules
+ - [ ] Add Saving Throws
+ - [ ] Add items
+ - [ ] Add monsters
+ - [ ] Add vehicles
+
+
 # Requirements
 NodeJS
 
@@ -81,6 +88,7 @@ classes
 
 spells
     "/spells": "Get all spells.",
+    "/spells/names": "Get all spell names",
     "/spells/core": "Get core spells",
     "/spells/class/:name": "Get spells by class name",
     "/spells/level/:level": "Get spells by level",

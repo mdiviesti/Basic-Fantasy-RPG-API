@@ -1,6 +1,6 @@
 {
   "name": "basic-fantasy-rpg-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic Fantasy RPG API built with NodeJS",
   "main": "index.js",
   "scripts": {
