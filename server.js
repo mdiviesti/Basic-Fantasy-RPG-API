@@ -11,6 +11,13 @@ var restapi = express();
 
 restapi.use(cors());
 
+/**
+ * Root endpoint
+ * @param request
+ * @param response
+ * @returns {string}
+ * @constructor
+ */
 restapi.get('/', function (request, response) {
     let endpoints = [{
         "races": {
@@ -31,6 +38,7 @@ restapi.get('/', function (request, response) {
     }, {
         "spells": {
             "/spells": "Get all spells.",
+            "/spells/names": "Get all spell names",
             "/spells/core": "Get core spells",
             "/spells/class/:name": "Get spells by class name",
             "/spells/level/:level": "Get spells by level",
@@ -96,6 +104,10 @@ restapi.get('/classes/name/:name', function (request, response) {
 
 restapi.get('/spells', function (request, response) {
     response.json(SpellsData.getSpells());
+});
+
+restapi.get('/spells/names', function (request, response) {
+    response.json(SpellsData.getSpellsNames());
 });
 
 restapi.get('/spells/core', function (request, response) {

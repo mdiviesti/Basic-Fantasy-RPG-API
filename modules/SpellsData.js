@@ -1209,6 +1209,12 @@ class SpellsData {
         });
     }
 
+    getSpellsNames() {
+        return this.getSpells().map(function (obj) {
+            return obj.Name;
+        });
+    }
+
     getSpellsByClass(className) {
         return this.getSpells().filter(function (obj) {
             return obj.Class.toLowerCase() === className.toLowerCase();
