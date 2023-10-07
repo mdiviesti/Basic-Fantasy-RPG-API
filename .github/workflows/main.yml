@@ -17,13 +17,7 @@ jobs:
         install -m 600 -D /dev/null ~/.ssh/id_rsa
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST_IP }} > ~/.ssh/known_hosts
-    - name: Run sshpass commands
-      uses: matheusvanzan/sshpass-action@v2
-      with:
-        host: ${{ secrets.SERVER_HOST_IP }}
-        user: ${{ secrets.SERVER_USER }}
-        pass: ${{ secrets.SERVER_PASSWORD }}
-        run: |
-          cd ${{ secrets.SSH_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && pm2 restart BFRPG && exit
+    - name: connect and pull
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_IP }} "cd ${{ secrets.SSH_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && pm2 restart BFRPG && exit"
     - name: cleanup
       run: rm -rf ~/.ssh
