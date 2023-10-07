@@ -135,8 +135,8 @@ restapi.get('/spells/class/:name/level/:level', function (request, response){
     response.json(SpellsData.getSpellsByClassAndLevel(name, level));
 });
 
-restapi.listen(3000, function () {
-    console.log('CORS-enabled web server listening on port 3000')
+restapi.listen(3001, function () {
+    console.log('CORS-enabled web server listening on port 3001')
 });
 
 console.log("Submit GET or POST to http://localhost:3001/");
