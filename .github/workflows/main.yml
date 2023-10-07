@@ -24,6 +24,6 @@ jobs:
         user: ${{ secrets.SERVER_USER }}
         pass: ${{ secrets.SERVER_PASSWORD }}
         run: |
-          "cd ${{ secrets.SSH_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && pm2 restart BFRPG && exit"
+          "cd ${{ secrets.SSH_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && pm2 restart BFRPG && exit"
     - name: cleanup
       run: rm -rf ~/.ssh
